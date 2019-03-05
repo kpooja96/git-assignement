@@ -1,0 +1,129 @@
+
+1.	Create a directory ‘project_dir’ & cd to ‘project_dir’. 
+   Ans= proj_dir
+
+2.	Initialize git version database. (git init)
+
+   Ans = git init
+
+
+3.	Create a new file index.html.
+   Ans=  created index.html
+
+
+4.	Check the git status. You should find index.html as untracked file.
+
+   Ans =  git status
+
+
+5.	Stage the index.html file.
+    Ans= git add index.html
+
+
+6.	Commit index.html
+     Ans= git commit -m "First commit"
+
+7.	Make few changes in index.html & create a new file info.txt file.
+
+     Ans= done with changes in index.html file ans created info.txt file
+
+
+8.	Check git status. You should find index.html & info.txt as untracked files.
+
+      Ans=  git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+
+
+9.	Configure GIT to ignore all txt files.
+
+  Ans=  touch .gitignore
+
+
+10.	Again check the git status. You should find only index.html as untracked file.
+
+  Ans= it status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+
+11.	State & commit index.html
+  Ans= git commit -am "Added info.txt"
+
+12.	Log all your comments so far.
+   Ans = $ git log
+commit 500692f052ab636264a1ffa87f202418c9d391d8 (HEAD -> master)
+Author: Kumbhar <pooja-prakash.kumbhar@capgemini.com>
+Date:   Tue Mar 5 17:42:26 2019 +0530
+
+    Added info.txt
+
+commit 8578c535c0aef7a26360b0eda7f876b7d639c2db
+Author: Kumbhar <pooja-prakash.kumbhar@capgemini.com>
+Date:   Tue Mar 5 17:17:05 2019 +0530
+
+    First commit
+
+
+13.	Make some changes in index.html.
+  Ans = 
+
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        .gitignore
+        assgn1.txt
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+
+14.	Revert the change made in the previous step using git command.
+
+Ans =  git checkout index.html
+
+
+
+
+
+
+15.	Again change index.html.
+16.	Stage index.html
+17.	Revert back the last stage.
+18.	Rename ‘add’ command to ‘my-add’.
+19.	Using my_add command Stage index.html again & commit the changes.
+20.	Revert the last commit.
